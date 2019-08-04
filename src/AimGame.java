@@ -30,13 +30,12 @@ public class AimGame extends Canvas implements Runnable{
         try{
             thread.join();
             running = false;
-        }catch (Exception e){
+        } catch (Exception e){
             e.printStackTrace();
         }
     }
 
-    public void run()
-    {
+    public void run() {
         long lastTime = System.nanoTime();
         double amountOfTicks = 60.0;
         double ns = 1000000000 / amountOfTicks;
@@ -88,10 +87,6 @@ public class AimGame extends Canvas implements Runnable{
         handler.render(g);
         g.dispose();
         bs.show();
-    }
-
-    public static void main(String[] args){
-        new AimGame();
     }
 
 }
