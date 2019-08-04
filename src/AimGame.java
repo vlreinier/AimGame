@@ -15,7 +15,7 @@ public class AimGame extends Canvas implements Runnable{
         new Window(width, height, "first game", this);
 
         random = new Random();
-        for (int i = 0; i < 40; i++){
+        for (int i = 0; i < 10; i++){
             handler.addObject(new Player(random.nextInt(width - 50), random.nextInt(height - 50), ID.Player));
         }
     }
